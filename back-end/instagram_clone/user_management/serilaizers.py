@@ -1,4 +1,4 @@
-from .models import User, Comments
+from .models import User
 from rest_framework import serializers
 
 
@@ -8,8 +8,8 @@ class UserSerializer(serializers.Serializer):
         model = User
         fields = "__all__"
 
-class CommentSerializer(serializers.Serializer):
-    class Meta:
-        model = Comments
-        fields = ["id","user"]
+# class CommentSerializer(serializers.Serializer):
+#     class Meta:
+#         model = Comments
+#         fields = ["id","user"]
 
